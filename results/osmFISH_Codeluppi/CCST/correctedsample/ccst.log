@@ -1,0 +1,70 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress: 49it [00:00, 519.77it/s]              
+
+Running CCST
+Preprocessing
+Calculating graph
+calculating distance matrix, it takes a while
+avg num 1938.6979747881794
+avg num 1019.553316800992
+avg num 354.76947716470346
+avg num 103.62275263484192
+avg num 29.293139078321968
+avg num 8.349969001859888
+avg num 17.454329406902254
+avg num 12.51301921884687
+avg num 14.88189708617483
+Training
+Epoch: 100, Loss: 1.4067
+Epoch: 200, Loss: 1.3202
+Epoch: 300, Loss: 1.2564
+Epoch: 400, Loss: 1.1998
+Epoch: 500, Loss: 1.1540
+Epoch: 600, Loss: 1.1103
+Epoch: 700, Loss: 1.0804
+Epoch: 800, Loss: 1.0375
+Epoch: 900, Loss: 1.0151
+Epoch: 1000, Loss: 0.9861
+Epoch: 1100, Loss: 0.9659
+Epoch: 1200, Loss: 0.9355
+Epoch: 1300, Loss: 0.9046
+Epoch: 1400, Loss: 0.8956
+Epoch: 1500, Loss: 0.8603
+Epoch: 1600, Loss: 0.8574
+Epoch: 1700, Loss: 0.8013
+Epoch: 1800, Loss: 0.7750
+Epoch: 1900, Loss: 0.7658
+Epoch: 2000, Loss: 0.7268
+Epoch: 2100, Loss: 0.6976
+Epoch: 2200, Loss: 0.6744
+Epoch: 2300, Loss: 0.6302
+Epoch: 2400, Loss: 0.6217
+Epoch: 2500, Loss: 0.5607
+Epoch: 2600, Loss: 0.5466
+Epoch: 2700, Loss: 0.5129
+Epoch: 2800, Loss: 0.4910
+Epoch: 2900, Loss: 0.4602
+Epoch: 3000, Loss: 0.4446
+Epoch: 3100, Loss: 0.4149
+Epoch: 3200, Loss: 0.3953
+Epoch: 3300, Loss: 0.3575
+Epoch: 3400, Loss: 0.3375
+Epoch: 3500, Loss: 0.3085
+Epoch: 3600, Loss: 0.2969
+Epoch: 3700, Loss: 0.2789
+Epoch: 3800, Loss: 0.2466
+Epoch: 3900, Loss: 0.2580
+Epoch: 4000, Loss: 0.2228
+Epoch: 4100, Loss: 0.1871
+Epoch: 4200, Loss: 0.1793
+Epoch: 4300, Loss: 0.1774
+Epoch: 4400, Loss: 0.1750
+Epoch: 4500, Loss: 0.1746
+Epoch: 4600, Loss: 0.1562
+Epoch: 4700, Loss: 0.1342
+Epoch: 4800, Loss: 0.1265
+Epoch: 4900, Loss: 0.1074
+Epoch: 5000, Loss: 0.1216
+Training time in seconds:  18749
+
+ Saved domain labels to clustering.tsv

@@ -1,0 +1,16 @@
+name: SEDR
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - pandas=2.2.1
+  - numpy=1.26.4
+  - scanpy=1.9.8
+  - scikit-learn=1.4.1.post1
+  - scikit-misc=0.1.4
+  - pytorch=2.1.2
+  - tqdm=4.66.2
+  - r-mclust=6.1
+  - rpy2=3.5.11
+  - pip:
+    - git+https://github.com/JinmiaoChenLab/SEDR

@@ -1,0 +1,13 @@
+name: Vesalius
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-remotes=2.5.0
+  - r-imager=0.45.8
+  - r-concaveman=1.1.0
+  - r-signac=1.12.0
+  - bioconductor-deseq2=1.42.0
+  - bioconductor-edger=4.0.2
+  - r-assertthat=0.2.1

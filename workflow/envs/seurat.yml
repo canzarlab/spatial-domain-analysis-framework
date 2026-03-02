@@ -1,0 +1,9 @@
+name: Seurat
+channels:
+ - conda-forge
+ - bioconda
+dependencies:
+ - r-seurat=4.1.1
+ - bioconductor-singlecellexperiment=1.16.0
+ - r-mclust=6.0.0
+ - r-assertthat=0.2.1

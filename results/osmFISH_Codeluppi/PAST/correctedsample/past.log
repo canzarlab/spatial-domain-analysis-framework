@@ -1,0 +1,46 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress:  83%|████████▎ | 40/48 [00:00<00:00, 396.98it/s]count matrix progress: 49it [00:00, 390.23it/s]                        
+R[write to console]:                    __           __ 
+   ____ ___  _____/ /_  _______/ /_
+  / __ `__ \/ ___/ / / / / ___/ __/
+ / / / / / / /__/ / /_/ (__  ) /_  
+/_/ /_/ /_/\___/_/\__,_/____/\__/   version 6.1
+Type 'citation("mclust")' for citing this R package in publications.
+
+
+Running method
+preprocessing
+setting up model
+training model
+This dataset is smaller than batchsize so that ripple walk sampler is not used!
+Epoch:10 Time:58.41s Loss: 9.318860
+Epoch:20 Time:43.90s Loss: 5.419181
+Epoch:30 Time:39.70s Loss: 4.161064
+Epoch:40 Time:41.27s Loss: 3.502210
+Epoch:50 Time:40.95s Loss: 3.059928
+Epoch:60 Time:40.39s Loss: 2.734003
+Epoch:70 Time:42.84s Loss: 2.457018
+Epoch:80 Time:42.82s Loss: 2.212625
+Epoch:90 Time:42.80s Loss: 2.041641
+Epoch:100 Time:42.83s Loss: 1.845610
+Epoch:110 Time:42.79s Loss: 1.692169
+Epoch:120 Time:43.94s Loss: 1.553516
+Epoch:130 Time:43.65s Loss: 1.441145
+Epoch:140 Time:42.81s Loss: 1.344265
+Epoch:150 Time:43.64s Loss: 1.264665
+Epoch:160 Time:44.24s Loss: 1.179494
+Epoch:170 Time:42.46s Loss: 1.114309
+Epoch:180 Time:42.83s Loss: 1.070146
+Epoch:190 Time:43.00s Loss: 1.003315
+Epoch:200 Time:43.38s Loss: 0.954958
+Epoch:210 Time:42.20s Loss: 0.898077
+Epoch:220 Time:40.61s Loss: 0.858071
+Epoch:230 Time:40.76s Loss: 0.829914
+Epoch:240 Time:41.43s Loss: 0.811215
+Epoch:250 Time:42.82s Loss: 0.798062
+Model Converge
+clustering
+fitting ...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+
+ Saved domain labels to clustering.tsv

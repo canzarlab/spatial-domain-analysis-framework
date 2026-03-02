@@ -1,0 +1,6 @@
+name: spicemix_processing
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - squidpy=1.2.3

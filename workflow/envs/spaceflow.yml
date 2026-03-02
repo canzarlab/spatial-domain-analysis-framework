@@ -1,0 +1,10 @@
+name: SpaceFlow
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.18
+  - pytorch=2.1.2
+  - networkx=2.8.8
+  - scikit-misc=0.1.4
+  - pip:
+    - SpaceFlow==1.0.4

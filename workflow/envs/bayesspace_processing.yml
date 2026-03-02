@@ -1,0 +1,8 @@
+name: bayesspace_processing
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - scanpy
+ - pandas

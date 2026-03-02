@@ -1,0 +1,10 @@
+name: STAGATE
+channels:
+  - conda-forge
+dependencies:
+  - scanpy=1.9.8
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - tensorflow=2.15.0
+  - r-mclust=6.1
+  - rpy2=3.5.11

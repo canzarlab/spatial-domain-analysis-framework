@@ -1,0 +1,17 @@
+name: DeepST
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - python=3.7
+  - pandas
+  - ca-certificates
+  - openssl
+  - scanpy
+  - networkx[version='<2.7']
+  - igraph
+  - certifi
+  - python-igraph
+  - louvain
+  - leidenalg
+  - psutil

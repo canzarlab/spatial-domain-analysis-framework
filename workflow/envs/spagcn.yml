@@ -1,0 +1,7 @@
+name: SpaGCN
+channels:
+  - conda-forge
+dependencies:
+  - louvain=0.8.1
+  - pip:
+    - SpaGCN==1.2.7

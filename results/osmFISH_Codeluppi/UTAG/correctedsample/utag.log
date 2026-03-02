@@ -1,0 +1,30 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress:  94%|█████████▍| 45/48 [00:00<00:00, 443.01it/s]count matrix progress: 49it [00:00, 450.95it/s]                        
+
+Running method
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.31s/it]100%|██████████| 1/1 [00:03<00:00,  3.31s/it]
+Applying Leiden Clustering at Resolution: 2.5...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.91s/it]100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Applying Leiden Clustering at Resolution: 1.25...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.36s/it]100%|██████████| 1/1 [00:02<00:00,  2.36s/it]
+Applying Leiden Clustering at Resolution: 0.625...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.46s/it]100%|██████████| 1/1 [00:02<00:00,  2.46s/it]
+Applying Leiden Clustering at Resolution: 0.3125...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.09s/it]100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Applying Leiden Clustering at Resolution: 0.46875...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.01s/it]100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+Applying Leiden Clustering at Resolution: 0.390625...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.41s/it]100%|██████████| 1/1 [00:02<00:00,  2.41s/it]
+Applying Leiden Clustering at Resolution: 0.4296875...
+Applying UTAG Algorithm...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.70s/it]100%|██████████| 1/1 [00:01<00:00,  1.70s/it]
+Applying Leiden Clustering at Resolution: 0.41015625...
+
+ Saved domain labels to clustering.tsv

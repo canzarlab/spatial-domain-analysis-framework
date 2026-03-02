@@ -1,0 +1,20 @@
+2025-09-17 21:45:00:INFO:Loaded 4839 cells and 33 genes from results/osmFISH_Codeluppi/SpiceMix/correctedsample/files/expression_correctedsample.txt
+2025-09-17 21:45:00:INFO:Loaded 4839 genes from results/osmFISH_Codeluppi/SpiceMix/correctedsample/files/genes_correctedsample.txt
+2025-09-17 21:45:00:WARNING:Detected 13071 duplicate edge(s) from 26142 loaded edges. Duplicate edges are discarded.
+2025-09-17 21:45:00:INFO:Loaded 13071 edges from results/osmFISH_Codeluppi/SpiceMix/correctedsample/files/neighborhood_correctedsample.txt
+
+Running method
+Traceback (most recent call last):
+  File "/gcm-lfs1/alice/workspace/projSDB/workflow/scripts/spicemix_run.py", line 73, in <module>
+    obj.initialize()
+  File "/gcm-lfs1/alice/workspace/projSDB/workflow/scripts/SpiceMix/SpiceMix/model.py", line 139, in initialize
+    labels = initialize_louvain(self.K, self.Ys, **kwargs)
+  File "/gcm-lfs1/alice/workspace/projSDB/workflow/scripts/SpiceMix/SpiceMix/initialization.py", line 33, in initialize_louvain
+    x = pca.fit_transform(x)
+  File "/gcm-lfs1/alice/workspace/projSDB/.snakemake/conda/9275c6dd8f2bf667e40ec2405d357716/lib/python3.9/site-packages/sklearn/decomposition/_pca.py", line 433, in fit_transform
+    U, S, Vt = self._fit(X)
+  File "/gcm-lfs1/alice/workspace/projSDB/.snakemake/conda/9275c6dd8f2bf667e40ec2405d357716/lib/python3.9/site-packages/sklearn/decomposition/_pca.py", line 483, in _fit
+    return self._fit_full(X, n_components)
+  File "/gcm-lfs1/alice/workspace/projSDB/.snakemake/conda/9275c6dd8f2bf667e40ec2405d357716/lib/python3.9/site-packages/sklearn/decomposition/_pca.py", line 501, in _fit_full
+    raise ValueError(
+ValueError: n_components=50 must be between 0 and min(n_samples, n_features)=33 with svd_solver='full'

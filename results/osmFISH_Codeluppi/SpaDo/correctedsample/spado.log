@@ -1,0 +1,59 @@
+[1] "Reading data"
+[1] "Running method"
+Loading required package: Seurat
+Attaching SeuratObject
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:SpaDo’:
+
+    SpatialPlot
+
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+PC_ 1 
+Positive:  V18 
+Negative:  V13 
+Computing nearest neighbor graph
+Computing SNN
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 161527
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.7499
+Number of communities: 22
+Elapsed time: 0 seconds
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+PC_ 1 
+Positive:  V1 11 
+Negative:  V2 8 
+Computing nearest neighbors
+Only one graph name supplied, storing nearest-neighbor graph only
+Loading required package: reshape2
+Loading required package: philentropy
+Metric: 'jensen-shannon' using unit: 'log'; comparing: 4839 vectors.
+
+Attaching package: ‘fastcluster’
+
+The following object is masked from ‘package:stats’:
+
+    hclust
+
+[1] TRUE
+[1] "Saved domain labels to clustering.tsv"

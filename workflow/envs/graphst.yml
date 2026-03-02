@@ -1,0 +1,15 @@
+name: GraphST 
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.1.2
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - pot=0.9.3
+  - scanpy=1.9.8
+  - r-mclust=6.1
+  - rpy2=3.5.11
+  - scikit-misc=0.1.4
+  - pip:
+    - GraphST

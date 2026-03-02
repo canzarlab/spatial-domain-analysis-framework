@@ -1,0 +1,6 @@
+name: BayesSpace
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bioconductor-bayesspace=1.12.0

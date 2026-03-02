@@ -1,0 +1,8 @@
+name: PAST
+channels:
+  - conda-forge
+dependencies:
+  - r-mclust=6.1
+  - rpy2=3.5.11
+  - pip:
+    - bio-past==1.6.3

@@ -1,0 +1,19 @@
+name: visualisation
+channels:
+ - conda-forge
+ - genomedk
+dependencies:
+ - pandas
+ - r-dplyr
+ - r-scales
+ - r-ggimage
+ - r-cowplot
+ - r-tibble
+ - r-rcolorbrewer
+ - r-dynutils
+ - r-stringr
+ - r-hmisc
+ - r-plyr
+ - r-ggforce
+ - matplotlib-base
+ - colorcet

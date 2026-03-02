@@ -1,0 +1,15 @@
+[1] "Reading data"
+[1] "Running method"
+#--------------------------------------------------------------------------------# 
+2025-09-17 19:36:48.315717  Checking Coordinates in spatial_omics 
+2025-09-17 19:36:48.327265  Checking Counts in spatial_omics 
+2025-09-17 19:36:48.378609  Calculating Assay scale from coordinates
+#--------------------------------------------------------------------------------# 
+#--------------------------------------------------------------------------------# 
+2025-09-17 19:36:48.401298 ===> Generating Tiles in spatial_omics <===
+2025-09-17 19:36:48.401626  Generating Voronoi Tesselation 
+2025-09-17 19:36:49.016491  Filtering Tiles
+Error in `$<-.data.frame`(`*tmp*`, "ind", value = c(1L, 2L, 3L, 4L, 5L,  : 
+  replacement has 4363 rows, data has 4839
+Calls: generate_embeddings ... generate_tiles -> filter_tiles -> $<- -> $<-.data.frame
+Execution halted

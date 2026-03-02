@@ -1,0 +1,64 @@
+[1] "Reading data"
+[1] "Running method"
+Warning: Data is of class matrix. Coercing to dgCMatrix.
+## Use SCTransform function in Seurat to normalize data. 
+Running SCTransform on assay: RNA
+Running SCTransform on layer: counts
+vst.flavor='v2' set. Using model with fixed slope and excluding poisson genes.
+`vst.flavor` is set to 'v2' but could not find glmGamPoi installed.
+Please install the glmGamPoi package for much faster estimation.
+--------------------------------------------
+install.packages('BiocManager')
+BiocManager::install('glmGamPoi')
+--------------------------------------------
+Falling back to native (slower) implementation.
+
+Variance stabilizing transformation of count matrix of size 33 by 3696
+Model formula is y ~ log_umi
+Get Negative Binomial regression parameters per gene
+Using 33 genes, 3696 cells
+Second step: Get residuals using fitted parameters for 33 genes
+Computing corrected count matrix for 33 genes
+Calculating gene attributes
+Wall clock passed: Time difference of 6.847938 secs
+Determine variable features
+Centering data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Set default assay to SCT
+## Use spark.test function in SPARK package to select spatially variable genes. 
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  3696 
+## number of total features:  33 
+## number of adjusted covariates:  0 
+# fitting normalized count-based spatial model under the null hypothesis ... 
+Found more than one class "dist" in cache; using the first, from namespace 'spam'
+Also defined by ‘BiocGenerics’
+Found more than one class "dist" in cache; using the first, from namespace 'spam'
+Also defined by ‘BiocGenerics’
+## testing Gaussian kernel: 1...
+## testing Periodic kernel: 1...
+## testing Gaussian kernel: 2...
+## testing Periodic kernel: 2...
+## testing Gaussian kernel: 3...
+## testing Periodic kernel: 3...
+## testing Gaussian kernel: 4...
+## testing Periodic kernel: 4...
+## testing Gaussian kernel: 5...
+## testing Periodic kernel: 5...
+## Identified  33  spatial genes through spark.test function. 
+The  number of significant spatial genes is less than the specified number of spatial genes. 
+## Using  33  significant spatially variable genes. 
+## Selected kernel type is:  gaussian  
+## The bandwidth is:  0.033368399019905  
+## Calculating kernel matrix
+## Finished calculating kernel matrix.
+[1] "Eigen decomposition on kernel matrix!"
+[1] "Using all eigenvectors and eigenvalues in the Kernel matrix!"
+Warning message:
+In (function (to_check, X, clust_centers, clust_info, dtype, nn,  :
+  detected tied distances to neighbors, see ?'BiocNeighbors-ties'
+[1] "number of labels equals number of coordinates:"
+[1] "reinserting missing cells"
+[1] "number of labels after reinserting:"
+[1] 4839
+[1] "Saved domain labels to clustering.tsv"

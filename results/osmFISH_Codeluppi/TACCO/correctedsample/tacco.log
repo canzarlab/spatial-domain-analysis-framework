@@ -1,0 +1,18 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress:  85%|████████▌ | 41/48 [00:00<00:00, 406.93it/s]count matrix progress: 49it [00:00, 427.84it/s]                        
+
+Running method
+calculating regions
+lo: -20.0, hi: 20.0
+lo: 0.0, hi: 20.0
+lo: 0.0, hi: 10.0
+lo: 0.0, hi: 5.0
+lo: 0.0, hi: 2.5
+lo: 0.0, hi: 1.25
+lo: 0.625, hi: 1.25
+lo: 0.625, hi: 0.9375
+correctedsample leiden res: 0.78
+
+inserting back missing cells.
+
+ Saved domain labels to clustering.tsv

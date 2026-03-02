@@ -1,0 +1,115 @@
+[1] "Reading data"
+[1] "Running method"
+Warning: Data is of class matrix. Coercing to dgCMatrix.
+Filter spots and features from Raw count data...
+ 
+ 
+2025-02-24 14:49:28.260495 : ***** Filtering step for raw count data finished!, 0.005 mins elapsed.
+Select the variable genes for each data batch...
+Find the spatially variables genes by SPARK-X...
+
+## ===== SPARK-X INPUT INFORMATION ====
+## number of total samples: 3373
+## number of total genes: 33
+## Running with single core, may take some time 
+
+## Testing With Projection Kernel
+## Testing With Gaussian Kernel 1
+## Testing With Gaussian Kernel 2
+## Testing With Gaussian Kernel 3
+## Testing With Gaussian Kernel 4
+## Testing With Gaussian Kernel 5
+## Testing With Cosine Kernel 1
+## Testing With Cosine Kernel 2
+## Testing With Cosine Kernel 3
+## Testing With Cosine Kernel 4
+## Testing With Cosine Kernel 5
+Select common top variable genes  for multiple samples...
+2025-02-24 14:49:28.58547 : ***** Gene selection finished!, 0.005 mins elapsed.
+Filter spots and features from SVGs(HVGs) count data...
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+2025-02-24 14:49:30.056024 : ***** Filtering step for count data with variable genes finished!, 0.023 mins elapsed.
+Warning messages:
+1: In FUN(X[[i]], ...) :
+  Only 33 SVGs will be returned since the number of genes is less than 2000
+
+2: In CreatePRECASTObject(seuList = list(sobj)) :
+  Number of genes in one of sample is less than 2000, so set minimum number of variable genes as gene.number=33
+Neighbors were identified for 0 out of 3373 spots.
+-----Intergrative data info.: 1 samples, 33 genes X 3373 spots------
+-----PRECAST model setting: error_heter=TRUE, Sigma_equal=FALSE, Sigma_diag=TRUE, mix_prop_heter=TRUE
+Start computing intial values... 
+
+fitting ...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+2025-02-24 14:49:41.011031 : ***** Initialization finished!, 0.129 mins elapsed.
+----Fitting PRECAST model----------------
+
+variable initialize finish! 
+predict Y and V! 
+Finish ICM step! 
+iter = 2, loglik= -138905.281250, dloglik=0.999935 
+predict Y and V! 
+Finish ICM step! 
+iter = 3, loglik= -129134.210938, dloglik=0.070343 
+predict Y and V! 
+Finish ICM step! 
+iter = 4, loglik= -126785.046875, dloglik=0.018192 
+predict Y and V! 
+Finish ICM step! 
+iter = 5, loglik= -125968.726562, dloglik=0.006439 
+predict Y and V! 
+Finish ICM step! 
+iter = 6, loglik= -125530.148438, dloglik=0.003482 
+predict Y and V! 
+Finish ICM step! 
+iter = 7, loglik= -125202.679688, dloglik=0.002609 
+predict Y and V! 
+Finish ICM step! 
+iter = 8, loglik= -124926.640625, dloglik=0.002205 
+predict Y and V! 
+Finish ICM step! 
+iter = 9, loglik= -124689.664062, dloglik=0.001897 
+predict Y and V! 
+Finish ICM step! 
+iter = 10, loglik= -124488.117188, dloglik=0.001616 
+predict Y and V! 
+Finish ICM step! 
+iter = 11, loglik= -124317.250000, dloglik=0.001373 
+predict Y and V! 
+Finish ICM step! 
+iter = 12, loglik= -124170.351562, dloglik=0.001182 
+predict Y and V! 
+Finish ICM step! 
+iter = 13, loglik= -124040.234375, dloglik=0.001048 
+predict Y and V! 
+Finish ICM step! 
+iter = 14, loglik= -123920.054688, dloglik=0.000969 
+predict Y and V! 
+Finish ICM step! 
+iter = 15, loglik= -123803.226562, dloglik=0.000943 
+predict Y and V! 
+Finish ICM step! 
+iter = 16, loglik= -123683.179688, dloglik=0.000970 
+predict Y and V! 
+Finish ICM step! 
+iter = 17, loglik= -123553.257812, dloglik=0.001050 
+predict Y and V! 
+Finish ICM step! 
+iter = 18, loglik= -123405.125000, dloglik=0.001199 
+predict Y and V! 
+Finish ICM step! 
+iter = 19, loglik= -123227.929688, dloglik=0.001436 
+predict Y and V! 
+Finish ICM step! 
+iter = 20, loglik= -123019.867188, dloglik=0.001688 
+2025-02-24 14:49:49.562021 : ***** PRECAST model fitting finished!, 0.142 mins elapsed.
+[1] "number of labels equals number of coordinates:"
+[1] "reinserting missing spots"
+[1] "number of labels after reinserting:"
+[1] 4839
+[1] "Saved domain labels to clustering.tsv"

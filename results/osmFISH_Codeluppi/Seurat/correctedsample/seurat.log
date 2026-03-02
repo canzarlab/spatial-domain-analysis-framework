@@ -1,0 +1,123 @@
+[1] "Reading data"
+[1] "\nRunning method\n"
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in irlba(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+PC_ 1 
+Positive:  6, 10, 13, 11, 12, 9, 4, 2, 3, 1 
+	   27, 7, 23, 24, 8, 14 
+Negative:  18, 19, 16, 25, 33, 15, 32, 30, 22, 26 
+	   21, 28, 17, 5, 29, 20 
+PC_ 2 
+Positive:  2, 1, 13, 14, 4, 3, 7, 27, 6, 8 
+	   10, 5, 9, 17, 24, 23 
+Negative:  18, 19, 25, 21, 33, 22, 15, 16, 26, 32 
+	   28, 30, 29, 31, 12, 20 
+PC_ 3 
+Positive:  9, 10, 11, 6, 24, 27, 13, 17, 23, 12 
+	   31, 14, 30, 20, 15, 26 
+Negative:  1, 2, 3, 7, 18, 25, 19, 5, 8, 16 
+	   21, 4, 29, 32, 33, 22 
+PC_ 4 
+Positive:  17, 31, 30, 15, 14, 29, 28, 20, 27, 21 
+	   16, 8, 33, 32, 7, 3 
+Negative:  24, 19, 18, 25, 13, 6, 10, 23, 9, 22 
+	   1, 26, 5, 2, 4, 11 
+PC_ 5 
+Positive:  12, 9, 26, 33, 6, 5, 4, 30, 16, 31 
+	   20, 8, 1, 32, 3, 2 
+Negative:  11, 24, 13, 29, 17, 14, 18, 10, 19, 22 
+	   28, 15, 21, 7, 23, 25 
+Warning messages:
+1: Requested number is larger than the number of available items (33). Setting to 33. 
+2: Requested number is larger than the number of available items (33). Setting to 33. 
+3: Requested number is larger than the number of available items (33). Setting to 33. 
+4: Requested number is larger than the number of available items (33). Setting to 33. 
+5: Requested number is larger than the number of available items (33). Setting to 33. 
+Computing nearest neighbor graph
+Computing SNN
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 1.0000
+Number of communities: 1
+Elapsed time: 0 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.5305
+Number of communities: 73
+Elapsed time: 0 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.6376
+Number of communities: 44
+Elapsed time: 0 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.7240
+Number of communities: 27
+Elapsed time: 0 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.7892
+Number of communities: 17
+Elapsed time: 0 seconds
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 4839
+Number of edges: 153219
+
+Running Louvain algorithm...
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Maximum modularity in 10 random starts: 0.8407
+Number of communities: 11
+Elapsed time: 0 seconds
+[1] TRUE
+[1] "Saved domain labels to clustering.tsv"

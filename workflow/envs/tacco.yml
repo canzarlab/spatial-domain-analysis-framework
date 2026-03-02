@@ -1,0 +1,6 @@
+name: TACCO
+channels:
+  - conda-forge
+dependencies:
+  - tacco=0.3.0
+  - leidenalg=0.10.2

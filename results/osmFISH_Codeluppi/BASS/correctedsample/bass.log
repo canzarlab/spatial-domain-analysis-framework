@@ -1,0 +1,21 @@
+[1] "Reading data"
+[1] "Running method"
+Location data coerced to a matrix
+***************************************
+  INPUT INFO:
+    - Number of tissue sections: 1 
+    - Number of cells/spots: 4839 
+    - Number of genes: 33 
+    - Potts interaction parameter estimation method: SW 
+      - Estimate Potts interaction parameter with SW algorithm
+  To list all hyper-parameters, Type listAllHyper(BASS_object)
+***************************************
+***** Log-normalize gene expression data *****
+***** Exclude genes with 0 expression *****
+***** Reduce data dimension with PCA *****
+Burnin iteration: 100/2000Burnin iteration: 200/2000Burnin iteration: 300/2000Burnin iteration: 400/2000Burnin iteration: 500/2000Burnin iteration: 600/2000Burnin iteration: 700/2000Burnin iteration: 800/2000Burnin iteration: 900/2000Burnin iteration: 1000/2000Burnin iteration: 1100/2000Burnin iteration: 1200/2000Burnin iteration: 1300/2000Burnin iteration: 1400/2000Burnin iteration: 1500/2000Burnin iteration: 1600/2000Burnin iteration: 1700/2000Burnin iteration: 1800/2000Burnin iteration: 1900/2000Burnin iteration: 2000/2000Sampling iteration: 100/5000Sampling iteration: 200/5000Sampling iteration: 300/5000Sampling iteration: 400/5000Sampling iteration: 500/5000Sampling iteration: 600/5000Sampling iteration: 700/5000Sampling iteration: 800/5000Sampling iteration: 900/5000Sampling iteration: 1000/5000Sampling iteration: 1100/5000Sampling iteration: 1200/5000Sampling iteration: 1300/5000Sampling iteration: 1400/5000Sampling iteration: 1500/5000Sampling iteration: 1600/5000Sampling iteration: 1700/5000Sampling iteration: 1800/5000Sampling iteration: 1900/5000Sampling iteration: 2000/5000Sampling iteration: 2100/5000Sampling iteration: 2200/5000Sampling iteration: 2300/5000Sampling iteration: 2400/5000Sampling iteration: 2500/5000Sampling iteration: 2600/5000Sampling iteration: 2700/5000Sampling iteration: 2800/5000Sampling iteration: 2900/5000Sampling iteration: 3000/5000Sampling iteration: 3100/5000Sampling iteration: 3200/5000Sampling iteration: 3300/5000Sampling iteration: 3400/5000Sampling iteration: 3500/5000Sampling iteration: 3600/5000Sampling iteration: 3700/5000Sampling iteration: 3800/5000Sampling iteration: 3900/5000Sampling iteration: 4000/5000Sampling iteration: 4100/5000Sampling iteration: 4200/5000Sampling iteration: 4300/5000Sampling iteration: 4400/5000Sampling iteration: 4500/5000Sampling iteration: 4600/5000Sampling iteration: 4700/5000Sampling iteration: 4800/5000Sampling iteration: 4900/5000Sampling iteration: 5000/5000
+done
+Post-processing...
+done
+[1] TRUE
+[1] "Saved domain labels to clustering.tsv"

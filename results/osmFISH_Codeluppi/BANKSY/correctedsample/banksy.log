@@ -1,0 +1,144 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress: 49it [00:00, 546.22it/s]              
+R[write to console]:                    __           __ 
+   ____ ___  _____/ /_  _______/ /_
+  / __ `__ \/ ___/ / / / / ___/ __/
+ / / / / / / /__/ / /_/ (__  ) /_  
+/_/ /_/ /_/\___/_/\__,_/____/\__/   version 6.1
+Type 'citation("mclust")' for citing this R package in publications.
+
+
+Preprocessing
+
+cells before filtering: 4839
+cells after filtering: 4672
+genes before filtering: 33
+genes after filtering: 33
+--- Max-Min before normalization -----
+Displaying max and min of Dataset
+Max: 342, Min: 0
+
+--- Max-Min after normalization -----
+Displaying max and min of Dataset
+Max: 132.49586486816406, Min: 0.0
+
+--- Normalized and log-transformed data -----
+Displaying max and min of Dataset
+Max: 4.894070625305176, Min: 0.0
+
+Displaying dataset after filtering by HVG
+View of AnnData object with n_obs × n_vars = 4672 × 33
+    obs: 'x', 'y', 'n_counts'
+    var: 'n_cells'
+
+Running BANKSY
+
+Median distance to closest cell = 169.052304299462
+
+---- Ran median_dist_to_nearest_neighbour in 0.01 s ----
+
+---- Ran generate_spatial_distance_graph in 0.02 s ----
+
+---- Ran row_normalize in 0.03 s ----
+
+---- Ran generate_spatial_weights_fixed_nbrs in 0.25 s ----
+
+---- Ran generate_spatial_distance_graph in 0.04 s ----
+
+---- Ran theta_from_spatial_graph in 0.06 s ----
+
+---- Ran row_normalize in 0.05 s ----
+
+---- Ran generate_spatial_weights_fixed_nbrs in 0.37 s ----
+
+Runtime Feb-24-2025-14-49
+
+33 genes to be analysed:
+Gene List:
+Index(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
+       '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24',
+       '25', '26', '27', '28', '29', '30', '31', '32'],
+      dtype='object')
+
+Decay Type: scaled_gaussian
+Weights Object: {'weights': {0: <4672x4672 sparse matrix of type '<class 'numpy.float64'>'
+	with 70080 stored elements in Compressed Sparse Row format>, 1: <4672x4672 sparse matrix of type '<class 'numpy.complex128'>'
+	with 140160 stored elements in Compressed Sparse Row format>}}
+
+Nbr matrix | Mean: 5.06 | Std: 7.64
+Size of Nbr | Shape: (4672, 33)
+Top 3 entries of Nbr Mat:
+
+[[12.61053751  8.96042731  0.39622405]
+ [12.68276108 15.57831446  0.32830608]
+ [ 6.53074662  1.09901995  0.34456267]]
+
+AGF matrix | Mean: 1.14 | Std: 1.54
+Size of AGF mat (m = 1) | Shape: (4672, 33)
+Top entries of AGF:
+[[3.44353209 4.59692474 0.19058811]
+ [1.07824223 0.7870447  0.13085148]
+ [0.75999039 0.7825129  0.2981281 ]]
+Ran 'Create BANKSY Matrix' in 0.01 mins
+
+Cell by gene matrix has shape (4672, 33)
+
+Scale factors squared: [0.2        0.53333333 0.26666667]
+Scale factors: [0.4472136  0.73029674 0.51639778]
+Shape of BANKSY matrix: (4672, 99)
+Type of banksy_matrix: <class 'anndata._core.anndata.AnnData'>
+
+Current decay types: ['scaled_gaussian']
+
+Reducing dims of dataset in (Index = scaled_gaussian, lambda = 0.8)
+==================================================
+
+Setting the total number of PC = 20
+Original shape of matrix: (4672, 99)
+Reduced shape of matrix: (4672, 20)
+------------------------------------------------------------
+min_value = -4.621683635661241, mean = -6.874257631925627e-17, max = 7.2204226448879565
+
+Decay type: scaled_gaussian
+Neighbourhood Contribution (Lambda Parameter): 0.8
+reduced_pc_20 
+
+PCA dims to analyse: [20]
+
+====================================================================================================
+Setting up partitioner for (nbr decay = scaled_gaussian), Neighbourhood contribution = 0.8, PCA dimensions = 20)
+====================================================================================================
+
+
+Fitting M-cluster algorithm with 11 label
+------------------------------
+
+Clustering PC_Embedding in obsm: reduced_pc_20
+ of type: <class 'numpy.ndarray'>
+obsm reduced_pc_20 : of type <class 'numpy.ndarray'> | shape (4672, 20)
+Array element is finite: True
+fitting ...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+0        8
+1       10
+2        5
+3       10
+4       10
+        ..
+4834     8
+4835     4
+4836     7
+4837     8
+4838     3
+Name: mclust, Length: 4672, dtype: int64
+No annotated labels
+
+After sorting Dataframe
+Shape of dataframe: (1, 6)
+                                                          decay  ...                                              adata
+scaled_gaussian_pc20_nc0.80_labels11.00_mclust  scaled_gaussian  ...  [[[View of AnnData object with n_obs × n_vars ...
+
+[1 rows x 6 columns]
+Missing 167 cells. Inserting NaN.
+
+ Saved domain labels to clustering.tsv

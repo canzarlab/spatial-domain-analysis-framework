@@ -1,0 +1,9 @@
+name: MERINGUE
+channels:
+  - conda-forge
+dependencies:
+  - r-remotes=2.5.0
+  - r-igraph=2.0.2
+  - r-assertthat=0.2.1
+  - r-data.table=1.15.2
+  - r-stringr=1.5.1

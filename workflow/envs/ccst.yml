@@ -1,0 +1,11 @@
+name: CCST
+channels:
+  - conda-forge
+  - pytorch
+  - pyg
+dependencies:
+  - scanpy=1.9.8
+  - pytorch=2.1.2
+  - pyg=2.5.0
+  - numpy=1.26.4
+  - pandas=2.2.1

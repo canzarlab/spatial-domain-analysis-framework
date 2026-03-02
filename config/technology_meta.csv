@@ -1,0 +1,13 @@
+,seq_or_img,n_neighbours,resolution,res
+Visium,seq,6,spot,lowres
+osmFISH,img,5,single_cell,highres
+sciSpace,seq,4,spot,
+STARmap,seq,5,single_cell,highres
+ST,seq,4,spot,lowres
+Slide-seq,seq,5,spot,highres
+Slide-seqV2,seq,5,spot,
+IMC,img,5,single_cell,
+MERFISH,img,5,single_cell,highres
+CosMx,img,5,single_cell,
+Xenium,img,5,single_cell,
+StereoSeq,seq,4,spot,highres

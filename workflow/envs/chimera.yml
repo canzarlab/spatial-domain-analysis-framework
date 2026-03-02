@@ -1,0 +1,33 @@
+name: Chimera
+channels:
+  - pyg
+  - conda-forge
+dependencies:
+  - gudhi
+  - leidenalg
+  - networkx=2.6
+  - numpy
+  - pandas
+  - pip
+  - pot
+  - pyg
+  - python=3.10
+  - pytorch
+  - r-mclust
+  - rpy2
+  - scanpy
+  - scikit-learn
+  - scikit-misc=0.1.4
+  - scipy
+  - somoclu
+  - tensorflow
+  - tqdm
+  - cmcrameri
+  - ca-certificates
+  - certifi
+  - openssl
+  - pip:
+      - graphst==1.1.1
+      - git+https://github.com/zcang/SCAN-IT
+      - somde==0.1.8
+      - git+https://github.com/QIFEIDKN/STAGATE

@@ -1,0 +1,7 @@
+name: SpatialPCA
+channels:
+  - conda-forge
+dependencies:
+  - r-remotes
+  - r-biocmanager
+  - r-igraph

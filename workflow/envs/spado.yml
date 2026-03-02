@@ -1,0 +1,9 @@
+name: SpaDo
+channels:
+  - conda-forge
+dependencies:
+  - r-devtools=2.4.5
+  - r-seurat=4.0.4
+  - r-seuratobject=4.0.4
+  - r-philentropy=0.5.0
+  - r-fastcluster=1.1.25

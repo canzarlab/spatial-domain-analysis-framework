@@ -1,0 +1,7 @@
+name: UTAG
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip:
+    - git+https://github.com/ElementoLab/utag.git@main

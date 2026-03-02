@@ -1,0 +1,79 @@
+"""
+Author: A. Descoeudres
+Affiliation: University of Regensburg
+Aim: Spatial Domains Benchmark
+
+Run:    # dry run
+        snakemake -s snakefile_name.smk --cores all -n
+        # Touch output files (mark them up to date without really changing them) instead of running their commands.
+        snakemake -t
+        # Number of Jobs
+        snakemake -p -j 20
+        # DAG Jobs
+        snakemake --dag | dot -Tpdf > jobs_dag.pdf
+        # DAG Rules
+        snakemake --rulegraph | dot -Tsvg > rules_dag.svg
+        ## Go on with independent jobs if a job fails.
+        snakemake -p -j 20 -k
+        ## Force the re-execution or creation of the given rules or files.
+        snakemake -p -j 20 -R rule_name
+"""
+
+import pdb
+import os
+os.environ["OMP_NUM_THREADS"] = "1"
+import pandas as pd
+import datetime
+from itertools import product
+from scripts.aggregate import load_designmatrix
+dt  = datetime.datetime.now()
+now = dt.strftime('%y%m%d-%H%M%S')
+
+# Datasets --------------------------------------
+sp_df = load_designmatrix()
+
+# Constraint wildcards ---------------------
+wildcard_constraints:
+    n_cluster = "\d+",
+    method = "[^_]+",
+
+# Snakemake Rules ----------------------------------------------
+include: "rules/common.smk"
+include: "rules/smoothing.smk"
+# methods: 
+include: "rules/adept.smk"
+include: "rules/banksy.smk"
+include: "rules/bass.smk"
+include: "rules/bayesspace.smk"
+include: "rules/ccst.smk"
+include: "rules/cellcharter.smk"
+include: "rules/deepst.smk"
+include: "rules/giotto.smk"
+include: "rules/graphpca.smk"
+include: "rules/graphst.smk"
+include: "rules/meringue.smk"
+include: "rules/mnmst.smk"
+include: "rules/past.smk"
+include: "rules/precast.smk"
+include: "rules/scanit.smk"
+include: "rules/scanpy.smk"
+include: "rules/scmeb.smk"
+include: "rules/sedr.smk"
+include: "rules/seurat.smk"
+include: "rules/spaceflow.smk"
+include: "rules/spado.smk"
+include: "rules/spagcn.smk"
+include: "rules/spatialmgcn.smk"
+include: "rules/spatialpca.smk"
+include: "rules/spicemix.smk"
+include: "rules/stagate.smk"
+include: "rules/tacco.smk"
+include: "rules/utag.smk"
+include: "rules/vesalius.smk"
+include: "rules/chimeras.smk"
+
+# The first rule should define the default target files.
+# Subsequent target rules can be specified below. They should start with all_*.
+rule all:
+    input: 
+        os.path.join('results','all_scores.csv'),

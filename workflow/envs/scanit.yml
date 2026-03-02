@@ -1,0 +1,17 @@
+name: SCAN-IT_test
+channels:
+  - conda-forge
+  - pyg
+dependencies:
+  - pandas=2.2.1
+  - pytorch=1.12.1
+  - pyg=2.5.1
+  - scanpy=1.9.8
+  - gudhi=3.9.0
+  - networkx=2.8.8  # important
+  - somoclu=1.7.6
+  - leidenalg=0.10.2
+  - scipy=1.8.1  # important
+  - pip:
+    - somde==0.1.8
+    - git+https://github.com/zcang/SCAN-IT
