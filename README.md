@@ -148,4 +148,4 @@ Once the Snakemake finishes running, run `python collect_scores.py` manually to 
 
 ## Citation
 
-Coming soon to a bioRxiv near you. 
+Coming soon. 
