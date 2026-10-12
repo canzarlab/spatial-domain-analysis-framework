@@ -148,4 +148,4 @@ Once the Snakemake finishes running, run `python collect_scores.py` manually to 
 
 ## Citation
 
-Coming soon. 
+Descoeudres, A., Prusina, T., Schmidt, N., Do, V. H., Mages, S., Klughammer, J., Matijevic, D., & Canzar, S. (2026). An explanatory benchmark of spatial domain detection reveals key drivers of method performance. bioRxiv. [doi.org/10.64898/2026.03.12.710462](https://doi.org/10.64898/2026.03.12.710462)
