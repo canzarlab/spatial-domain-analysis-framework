@@ -136,3 +136,15 @@ if sum(jobs_df['failed']) + sum(jobs_df['missing']) > 0:
     errs_df.drop(columns=['outcome'], inplace=True)
     print('\nproblematic jobs:\n')
     print(tabulate(errs_df, headers='keys', tablefmt='simple'))
+
+# print currently running
+if sum(jobs_df['started']) > sum(jobs_df['missing']) + sum(jobs_df['done']) + sum(jobs_df['failed']):
+    print('\ncurrently running:')
+    running_df = jobs_df[(jobs_df['started'] == 1) & (jobs_df['done'] == 0) & (jobs_df['failed'] == 0) & (jobs_df['missing'] == 0)]
+    running_df = running_df[running_df['rule'] != 'get_scores']
+    try:
+        running_df.drop(columns=['rule', 'output', 'reason', 'wildcards', 'priority', 'started', 'failed', 'missing', 'done'], inplace=True)
+    except KeyError:
+        running_df.drop(columns=['rule', 'output', 'reason', 'wildcards', 'started', 'failed', 'missing', 'done'], inplace=True)
+    running_df.set_index('log', inplace=True)
+    print(tabulate(running_df.sort_index(), tablefmt='simple'))

@@ -11,13 +11,13 @@ from workflow.scripts.aggregate import load_scores
 def load_and_annotate_scores(scores_to_include='all', include_gt=False):
     all_scores_df = load_scores()
     all_scores_df['technology'] = [ds.split('_')[0] for ds in all_scores_df['dataset']]
-    all_scores_df['tech_type'] = ['imaging' if tech in ['MERFISH','osmFISH'] else 'high-res' if tech in ['Slide-seq','STARmap'] else 'low-res' if tech in ['10xVisium','ST'] else 'synth' for tech in all_scores_df['technology']]
+    all_scores_df['tech_type'] = ['imaging' if tech in ['MERFISH','osmFISH'] else 'high-res' if tech in ['Slide-seq','STARmap','Slide-seqV2','StereoSeq'] else 'low-res' if tech in ['10xVisium','ST'] else 'synth' for tech in all_scores_df['technology']]
     all_scores_df['exp'] = [sp.split('-')[0] if 'exp' in sp else None for sp in all_scores_df['sample']]
 
     if not include_gt:
         all_scores_df = all_scores_df[all_scores_df['method']!='gt']
 
-    real_datasets = ['osmFISH_Codeluppi', 'MERFISH_Moffitt', 'MERFISH_Zhang', 'STARmap_Wang', 'Slide-seq_Langlieb', '10xVisium_Fu', '10xVisium_Maynard', 'ST_Stahl']
+    real_datasets = ['osmFISH_Codeluppi', 'MERFISH_Moffitt', 'MERFISH_Zhang', 'STARmap_Wang', 'Slide-seq_Langlieb', 'Slide-seqV2_Lan', 'StereoSeq_Chen', '10xVisium_Fu', '10xVisium_Maynard', 'ST_Stahl']
     synth_datasets = ['synth-close', 'synth-circles', 'synth-moons', 'synth-varied', 'synth-blobs', 'synth-trials', 'synth-2blobs', 'synth-3stripes']
 
     if scores_to_include == 'real':

@@ -1,0 +1,24 @@
+name: PROST
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - anndata
+  - h5py
+  - leidenalg
+  - natsort
+  - numba=0.56.3
+  - numpy<1.24
+  - pandas
+  - rpy2=3.5.11
+  - scanpy
+  - scikit-image=0.19.2
+  - scikit-learn
+  - scipy
+  - r-mclust
+  - pytorch
+  - pip:
+    # Pin so pip does not upgrade the conda-installed numpy 1.x to numpy 2.x.
+    - numpy<1.24
+    - opencv-python==4.6.0.66

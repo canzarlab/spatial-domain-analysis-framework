@@ -1,0 +1,14 @@
+name: SpatialLeiden
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - bioconda::spatialleiden
+  - conda-forge::multispaeti
+  - scanpy
+  - squidpy
+  - numpy
+  - anndata
+  - pandas
+  - scikit-misc

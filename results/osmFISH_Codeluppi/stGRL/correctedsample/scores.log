@@ -1,0 +1,5 @@
+calculating supervised metrics
+calculating unsupervised metrics
+saving scores to file results/osmFISH_Codeluppi/stGRL/correctedsample/scores.csv
+calculating ground truth scores (unsupervised) and saving them
+done!

@@ -1,0 +1,10 @@
+Reading data
+count matrix progress:   0%|          | 0/48 [00:00<?, ?it/s]count matrix progress: 49it [00:00, 2800.51it/s]             
+
+Running method
+Preprocessing
+Building spatial graph
+Searching resolutions for target cluster count
+Clustering
+
+ Saved domain labels to clustering.tsv

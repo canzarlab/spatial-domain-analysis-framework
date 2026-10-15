@@ -1,0 +1,19 @@
+name: stGRL
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pytorch
+  - scanpy
+  - numpy
+  - anndata
+  - pandas
+  - scipy
+  - scikit-learn
+  - pot
+  - tqdm
+  - matplotlib
+  - r-mclust
+  - rpy2=3.5.11
+  - scikit-misc
